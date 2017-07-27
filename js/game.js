@@ -63,10 +63,10 @@ function resize(firsLaunch){
     if(window.innerWidth !== currWidth || window.innerHeight != currHeight || firsLaunch){
         if(window.innerWidth > window.innerHeight){
             aspectRatio = window.innerWidth / window.innerHeight;
-            renderer.resize(window.innerHeight * aspectRatio, window.innerHeight+0.25);
+            renderer.resize(window.innerHeight * aspectRatio, window.innerHeight);
         }else if(window.innerHeight > window.innerWidth){
             aspectRatio = window.innerHeight / window.innerWidth;
-            renderer.resize(window.innerHeight / aspectRatio, window.innerHeight+0.5);
+            renderer.resize(window.innerHeight / aspectRatio, window.innerHeight);
         }
         currWidth = window.innerWidth;
         currHeight = window.innerHeight;
@@ -103,7 +103,6 @@ function move(){
         player.y += 1;
     }
 }
-
 
 
 
