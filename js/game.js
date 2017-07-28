@@ -10,7 +10,7 @@ renderer.resize(window.innerWidth,window.innerHeight);
 renderer.autoResize = true;
 renderer.view.style.position = "absolute";
 renderer.view.style.display = "block";
-renderer.backgroundColor = 0xDFF3F7;
+//renderer.backgroundColor = 0xDFF3F7;
 
 renderer.view.id = 'canvas';
 var canvas = renderer.view;// 
